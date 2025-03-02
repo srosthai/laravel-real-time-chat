@@ -1,0 +1,1 @@
+(()=>{"use strict";window.setLastSeenOfUser=function(e){$.ajax({type:"post",url:route("update-last-seen"),data:{status:e},success:function(e){}})},setLastSeenOfUser(1),window.onbeforeunload=function(){Echo.leave("user-status"),setLastSeenOfUser(0)},Echo.join("user-status")})();

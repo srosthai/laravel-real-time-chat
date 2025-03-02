@@ -1,0 +1,19 @@
+/*
+button style
+*/
+
+.btn {
+  border: 0;
+  cursor: pointer;
+}
+
+.primary-btn {
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 7px 12px 0px;
+  height: 48px;
+  letter-spacing: 1px;
+  background: #f5981c none repeat scroll 0% 0% / auto padding-box border-box;
+  border-radius: 100px 100px 100px 100px;
+  padding: 17px 22px;
+  font-family: $primary-font;
+  line-height: 1;
+}

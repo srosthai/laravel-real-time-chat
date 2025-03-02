@@ -1,0 +1,10 @@
+.action-btn {
+  width: 30px;
+  height: 30px;
+  @extend .bg-secondary;
+  @extend .vh-center;
+}
+
+.sidebar-toggler:focus {
+  outline: none;
+}

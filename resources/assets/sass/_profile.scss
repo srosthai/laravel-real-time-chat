@@ -1,0 +1,73 @@
+.profile {
+    padding: 30px;
+    margin: auto;
+    box-shadow: 0 0 6px 3px rgba(0, 0, 0, .02);
+    height: calc(100vh - 165px);
+    border-radius: 7px;
+    overflow: auto;
+
+    &__inner {
+        display: flex;
+        max-width: 500px;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+        width: 100%;
+    }
+
+    &__img-wrapper {
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+        border-radius: 50%;
+
+        img {
+            width: inherit;
+            height: inherit;
+            object-fit: cover;
+        }
+    }
+
+    &__logo-img-wrapper {
+        width: 130px;
+        height: 70px;
+        overflow: hidden;
+
+        img {
+            width: inherit;
+            height: inherit;
+            object-fit: cover;
+        }
+    }
+
+    &__favicon-img-wrapper {
+        width: 60px;
+        height: 60px;
+        overflow: hidden;
+
+        img {
+            width: inherit;
+            height: inherit;
+            object-fit: cover;
+        }
+    }
+
+    &__update-label {
+        color: white;
+        background-color: #3db16b;
+        cursor: pointer;
+    }
+
+    &__name,
+    &__email,
+    &__about,
+    &__phone {
+        font-size: 16px;
+    }
+
+    &__required {
+        color: red;
+    }
+}
+
+

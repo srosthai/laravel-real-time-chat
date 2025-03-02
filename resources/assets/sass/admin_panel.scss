@@ -1,0 +1,108 @@
+.page {
+    &__heading {
+        font-size: 22px;
+    }
+}
+
+.container-fluid.page__container {
+    padding-top: 30px;
+}
+
+.index {
+    &__btn {
+        padding: 3px;
+        font-size: 16px;
+        &:hover {
+            color: white;
+        }
+    }
+}
+
+.user{
+    &__upload-btn {
+        width: 200px;
+        overflow: hidden;
+    }
+
+    &__bio{
+        line-height: 1.8em;
+    }
+}
+
+.user{
+    &__heading {
+        font-weight: bold
+    }
+}
+
+.dataTables_filter {
+    margin-right: 8px;
+}
+
+table.dataTable tbody th,
+table.dataTable tbody td {
+    vertical-align: middle;
+}
+table.dataTable tbody td label {
+    margin-bottom: 0px;
+}
+.dataTables_paginate {
+    margin-top: 12px;
+}
+table.dataTable {
+    border-collapse: collapse;
+}
+.dataTables_wrapper {
+    .dataTables_paginate {
+        .paginate_button.current {
+            color: white !important;
+            background: #f5981c !important;
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+            border: 1px solid #f5981c !important;
+
+            &:hover {
+                color: white !important;
+            }
+        }
+
+        .paginate_button:not(.current) {
+            color: #212529 !important;
+
+            &:hover {
+                background: #00c6ff !important;
+                border: 1px solid transparent !important;
+                color: #fff !important;
+            }
+        }
+    }
+}
+
+.w-5 {
+    width: 5%;
+}
+
+.swal2-input {
+    height: 2em!important;
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filter-container {
+  display: flex;
+  align-self: center;
+
+  &__btn {
+    align-self: center;
+    margin-top: auto;
+  }
+}
+
+.notification-sound-div{
+    @media  screen and (max-width: 771px){
+        display: block !important;        
+    }
+}

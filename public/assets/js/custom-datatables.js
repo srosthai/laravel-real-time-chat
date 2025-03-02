@@ -1,0 +1,1 @@
+(()=>{"use strict";$.extend($.fn.dataTable.defaults,{paging:!0,info:!0,ordering:!0,autoWidth:!1,pageLength:10,language:{search:"",sSearch:"Search"},preDrawCallback:function(){$(".dataTables_filter input").addClass("form-control"),$(".dataTables_filter input").attr("placeholder",Lang.get("messages.search"))}})})();

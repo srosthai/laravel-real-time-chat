@@ -1,0 +1,47 @@
+// globally override for bootstrap style
+
+input {
+  &:focus {
+    outline: none;
+  }
+}
+
+// core ui footer fixes at bottom
+.app-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+}
+
+// removed bootstrap default border of modal
+.modal-content {
+    border: 0;
+}
+
+// core ui profile dropdown
+.app-header .navbar-nav .dropdown-menu-right {
+    right: 34px;
+}
+
+.nav-link {
+    display: flex !important;
+    align-items: center !important;
+}
+
+.sidebar-nav {
+    .icon-speech.nav-icon {
+        position: relative;
+        top: 1px;
+    }
+}
+
+.sidebar-minimized {
+
+    @media (min-width: 992px) {
+        .nav .nav-link {
+            padding: 0.75rem 1rem ;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+// set the min breakpoint
+$break-min: 320px;
+
+// 320px + 1600px = 1920px
+$break-diff: 1600;
+
+@mixin font-responsive($f-min, $f-diff) {
+  font-size: calc( #{$f-min} + #{$f-diff} * ((100vw - #{$break-min}) / #{$break-diff}) );
+  @media(max-width: $break-min) {
+    font-size: $f-min;
+  }
+  @media(min-width: round($break-min + $break-diff)) {
+    font-size: round($f-min + $f-diff);
+  }
+}
